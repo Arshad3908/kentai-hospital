@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="./../style/doctor.css">
+
+<!-- animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- icons link -->
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+
+<body class="body">
+
+<!-- animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+    <!--bootstrap link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-white" data-aos="zoom-in-down">
+  <div class="container-fluid">
+    <img src="./../images/home images/kentai.png" alt="" height="60px" width="60px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item ">
+          <a class="nav-link mx-4" aria-current="page" href="./home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-4" href="./services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-4" href="./OPD.HTML">OPD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-4" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-4" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-4" href="./signin.html">Sign Up</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav justify-content-end">
+
+    </div>
+  </div>
+</nav>
+
+
+  <!--introduction-->
+  <div class="box">
+    <div class="text">
+      <p>cosmetic surgery</p>
+      <h1 class="logo">Dr. Adewale Taiwo</h1>
+    </div>
+  </div>
+
+
+  <!--Doctor-->
+  <div class="d-flex justify-content-evenly flex-wrap mt-4">
+    <div data-aos="fade-right" data-aos-duration="2000">
+      <hr>
+      <img src="./../images/home images/doc1.jpg" class="doct-img">
+      <h4 class="name">Dr. Adewale Taiwo</h4>
+      <hr>
+    </div>
+
+
+    <!--online apoinment-->
+    <div class="form" data-aos="fade-left" data-aos-duration="2000"><br>
+      <h6 style="text-align: center; color: rgb(67, 67, 134);">Book your appointment</h6>
+      <div class="col">
+        <input type="text" id="fullname" class="form-control py-2 my-3" placeholder="Full name*" aria-label="Full name*">
+      </div>
+      <div class="col">
+        <input type="text" id="email" class="form-control py-2 my-3" placeholder="Email*" aria-label="Email*">
+      </div>
+      <div class="col">
+        <input type="text" id="contact" class="form-control py-2 my-3" placeholder="Contact No." aria-label="Contact No.">
+      </div>
+      <div class="col">
+        <input type="text" id="procedure" class="form-control py-2 my-3" placeholder="Procedure" aria-label="Procedure">
+      </div>
+      <div class="col">
+        <input type="text" id="query" class="form-control py-2 my-3" placeholder="Write your query" aria-label="Write your query">
+      </div>
+      <div class="align-middle">
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+    </div>
+
+    <script>
+      function submitForm() {
+        const fullname = document.getElementById('fullname').value;
+        const email = document.getElementById('email').value;
+        const contact = document.getElementById('contact').value;
+        const procedure = document.getElementById('procedure').value;
+        const query = document.getElementById('query').value;
+  
+        if (fullname && email && contact && procedure && query) {
+          alert('Submit successfully');
+          window.location.href = 'doctor.html';
+        } else {
+          alert('Kindly provide all necessary details');
+        }
+      }
+    </script>
+  </div>
+
+  <!--info-->
+  <div class="d-flex justify-content-evenly mx-4 my-3">
+    <div>
+      <p>Dr. Adewale Taiwo, MBBS, MS, MCh, is a Board Certified Plastic,
+        Reconstructive & Cosmetic surgeon who has rapidly become one of the most sought after aesthetic surgery
+        practitioners in Nigeria. <br>
+
+        Dr. Adewale Taiwo's skill and passion for cosmetic and aesthetic surgery draws patients from across Nigeria and abroad.
+        Today, more and more people in Nigeria are becoming conscious of their bodies, and aesthetic surgical procedures
+        are rapidly gaining popularity. Aesthetic surgery is being preferred because it gives people a simple way of
+        getting the body they want. Often, no amount of dieting and gymming can get rid of stubborn fat in certain areas
+        of the body, for example the waistline, the abdomen and thighs. This is where aesthetic or cosmetic surgery can
+        help you shape your body exactly the way you want it.</p>
+    </div>
+  </div><hr>
+
+<!--Results-->
+<h1 style="text-align: center;" class="head" data-aos="zoom-out" data-aos-duration="3000">Results</h1>
+<div class="d-flex justify-content-evenly mt-5 flex-wrap">
+
+  <div class="card" style="width: 18rem; margin: 20px;" data-aos="zoom-in" data-aos-duration="1500" >
+    <img src="./../images/doctor images/3.webp" class="card-img-top" alt="hair treatment">
+    <div class="card-body">
+      <p class="card-text">A test tube, culture tube, or sample tube is a clear, cylindrical container that is typically open at one end and closed at the other.
+        Michael Faraday, a prominent British Physicist and Chemist, invented the test tubes (1791-1867).
+        Boiling tubes are another name for test tubes..</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem; margin: 20px;" data-aos="zoom-in" data-aos-duration="1500" >
+    <img src="./../images/doctor images/4.webp" class="card-img-top" alt="skin care">
+    <div class="card-body">
+      <p class="card-text"> A thermometer is an instrument that measures temperature. It can measure the temperature of a solid, a liquid, or a gas. The three most common units of measurement for temperature are Celsius, Fahrenheit, and kelvin. The Celsius scale is part of the metric system.Types of thermometers include...</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin: 20px;" data-aos="zoom-in"data-aos-duration="1500" >
+    <img src="./../images/doctor images/5.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">An injection is a way of administering a liquid to a person using a needle and syringe. It’s also sometimes also called a ‘shot’ or ‘jab’. Injections are used to give a wide variety of different medications, such as insulin, vaccines and Botox (onabotulinumtoxinA), but not all injections are the same</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- footer -->
+<footer id="contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+
+  <div class="footer d-flex flex-wrap">
+
+    <!-- map -->
+
+    <!-- footer info -->
+
+    <div class="footer-info d-flex justify-content-between my-2 mx-auto flex-wrap">
+
+      <div class="info">
+
+        <!-- footer location -->
+
+        <div class="footer-location d-flex mt-2">
+          <span class="material-symbols-outlined">
+            location_on
+          </span>
+          <div class="location ms-3">
+            <h4>KENTAI Multispecility Hospital</h4>
+            <p>Ilase,OSUN STATE,NIGERIA</p>
+          </div>
+        </div>
+
+        <!-- footer email -->
+
+        <div class="footer-email d-flex mt-3">
+          <span class="material-symbols-outlined">
+            mail
+          </span>
+          <div class="email ms-3">
+            <h4>Email</h4>
+            <a href="#">kentaihospital@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- footer website -->
+
+        <div class="footer-website d-flex mt-3">
+          <span class="material-symbols-outlined">
+            house
+          </span>
+          <div class="website ms-3">
+            <h4>Website</h4>
+            <a href="#">www.kentaihospital.com</a>
+          </div>
+        </div>
+
+        <!-- footer number -->
+
+        <div class="footer-number d-flex mt-3">
+          <span class="material-symbols-outlined">
+            call
+          </span>
+          <div class="number ms-3">
+            <h4>Help-line Numbers</h4>
+            <p>033 40 500 500 <br> +234 9831639000 <br> +234 983153900</p>
+
+            <h4>Corporate Booking Number</h4>
+            <p>+234 8585088550</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info ms-5">
+
+        <!-- sms -->
+
+        <div class="sms">
+          <h4 class="dr">Doctors wanting to reach <br> KENTAI Hospital <br> Managenment</h4>
+          <h4>May please call:</h4>
+          <p>CMS(+234 98310 96524) <br> GMM(+234 97487 70596)</p>
+
+          <h4>or send E-mail to:</h4>
+          <p>CEO:ceo.kentaihospital@gmai.com <br> CMS:kentaihospital@.com</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="design ">
+    <p>Design by kentai</p>
+  </div>
+
+
+</footer>
+
+
+
+
+<!--script link-->
+<script src="script.js"></script>
+
+</body>
+</html>
